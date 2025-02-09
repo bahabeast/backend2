@@ -3,7 +3,7 @@ const axios = require("axios");
 require("dotenv").config();
 
 const router = express.Router();
-const API_KEY = process.env.OPENWEATHER_API_KEY; // Load API key from .env
+const API_KEY = process.env.OPENWEATHER_API_KEY; 
 
 router.get("/weather/:city", async (req, res) => {
   try {
